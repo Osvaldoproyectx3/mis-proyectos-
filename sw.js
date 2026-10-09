@@ -2,8 +2,8 @@
 // - La app carga de la red primero (asi siempre ves la version mas reciente).
 // - Si no hay senal, abre la ultima copia guardada de la app.
 // - NUNCA guarda datos de clientes: las consultas a la base de datos (supabase) no pasan por aqui.
-const CACHE_NAME = 'proyectos-v1';
-const ARCHIVOS_BASE = ['./index.html', './manifest.json', './icon-192.png', './icon-512.png'];
+const CACHE_NAME = 'proyectos-v2';
+const ARCHIVOS_BASE = ['./index.html', './manifest.json', './icon-192-1.png', './icon-512-1.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(ARCHIVOS_BASE)));
